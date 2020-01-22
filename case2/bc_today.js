@@ -13,12 +13,12 @@
    student union.
 
 */
-
+//making variable
 var thisDate = new Date();
 var dateString = thisDate.toLocaleDateString();
 var dateHTML = "<h2>" + dateString + "</h2>";
 var thisDay = thisDate.getDay();
-
+//creating schedule
 var eventHTML = getEvent(thisDay);
 document.getElementById("unionToday").insertAdjacentHTML("beforeend", dateHTML + eventHTML);
  
